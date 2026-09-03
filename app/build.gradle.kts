@@ -21,6 +21,8 @@ dependencies {
     testImplementation(libs.junit.jupiter)
 
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+
+    implementation("info.picocli:picocli:4.7.7")
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
