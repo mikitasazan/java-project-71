@@ -9,20 +9,41 @@
 
 ## Стек
 
-- Java
+- Java 21, Gradle (application plugin)
+- picocli — разбор аргументов и опций командной строки
+- Jackson (jackson-databind) — парсинг JSON
+- JUnit 5 — тесты
+- gradle-versions-plugin — проверка обновлений зависимостей
 
 ## Установка
 
-<!-- Опишите установку: клонирование, зависимости, переменные окружения -->
-
 ```bash
 git clone https://github.com/mikitasazan/java-project-71.git
-cd java-project-71
+cd java-project-71/app
+make install
 ```
 
 ## Использование
 
-<!-- Добавьте примеры запуска и запись asciinema — именно это смотрит работодатель -->
+```bash
+cd app
+make install
+./build/install/app/bin/app -h
+./build/install/app/bin/app src/test/resources/fixtures/file1.json src/test/resources/fixtures/file2.json
+```
+
+Пример вывода (формат stylish, по умолчанию):
+
+```
+{
+  - follow: false
+    host: hexlet.io
+  - proxy: 123.234.53.22
+  - timeout: 50
+  + timeout: 20
+  + verbose: true
+}
+```
 
 ---
 
