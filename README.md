@@ -1,6 +1,7 @@
 # Вычислитель отличий (Java)
 
 [![hexlet-check](https://github.com/mikitasazan/java-project-71/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/mikitasazan/java-project-71/actions)
+[![Build](https://github.com/mikitasazan/java-project-71/actions/workflows/main.yml/badge.svg)](https://github.com/mikitasazan/java-project-71/actions)
 
 В этом проекте отрабатывается работа с коллекциями и структурами данных. Изучаются способы построения и обхода деревьев. Вы познакомитесь с разными форматами данных (json, yml), научитесь их парсить и формировать. Начнете писать тесты (JUnit) и освоите разработку через них. Познакомитесь с непрерывной интеграцией (CI) и элементами экстремального программирования (XP). Прокачаете ООП мышление.
 
@@ -12,8 +13,10 @@
 - Java 21, Gradle (application plugin)
 - picocli — разбор аргументов и опций командной строки
 - Jackson (jackson-databind) — парсинг JSON
-- JUnit 5 — тесты
+- JUnit 5 — тесты, JaCoCo — покрытие тестами (порог 80%)
+- Spotless + google-java-format — стиль кода
 - gradle-versions-plugin — проверка обновлений зависимостей
+- GitHub Actions — своя сборка (`make build`) плюс проверка Хекслета
 
 ## Установка
 

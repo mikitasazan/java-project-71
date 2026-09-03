@@ -1,7 +1,6 @@
 package hexlet.code;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-
 import java.util.Map;
 
 public class Parser {
