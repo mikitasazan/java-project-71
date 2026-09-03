@@ -35,4 +35,13 @@ class DifferTest {
                 Differ.generate(getFixturePath("nested1.json"), getFixturePath("nested2.json"));
         assertEquals(expected, actual);
     }
+
+    @Test
+    void generateNestedPlainDiff() throws Exception {
+        String expected = readFixture("expected_plain.txt").stripTrailing();
+        String actual =
+                Differ.generate(
+                        getFixturePath("nested1.json"), getFixturePath("nested2.json"), "plain");
+        assertEquals(expected, actual);
+    }
 }

@@ -1,6 +1,5 @@
 package hexlet.code;
 
-import hexlet.code.formatters.Formatters;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
@@ -21,7 +20,7 @@ public class Differ {
 
         List<Node> diff = DiffBuilder.build(data1, data2);
 
-        return Formatters.format(diff, formatName);
+        return Formatter.format(diff, formatName);
     }
 
     private static Map<String, Object> readData(String filePath) throws Exception {

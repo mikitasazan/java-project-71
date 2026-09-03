@@ -48,6 +48,15 @@ make install
 }
 ```
 
+Формат plain (`-f plain`, для чтения человеком, без вложенных значений целиком):
+
+```
+Property 'follow' was removed
+Property 'proxy' was removed
+Property 'timeout' was updated. From 50 to 20
+Property 'verbose' was added with value: true
+```
+
 ---
 
 <details>
