@@ -4,7 +4,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.nio.file.Files;
 import java.nio.file.Path;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
 class DifferTest {
 
@@ -16,10 +17,13 @@ class DifferTest {
         return Files.readString(Path.of(getFixturePath(fileName)));
     }
 
-    @Test
-    void generateFlatJsonStylishDiff() throws Exception {
+    @ParameterizedTest
+    @ValueSource(strings = {"json", "yml"})
+    void generateFlatStylishDiff(String extension) throws Exception {
         String expected = readFixture("expected_stylish.txt").stripTrailing();
-        String actual = Differ.generate(getFixturePath("file1.json"), getFixturePath("file2.json"));
+        String actual =
+                Differ.generate(
+                        getFixturePath("file1." + extension), getFixturePath("file2." + extension));
         assertEquals(expected, actual);
     }
 }

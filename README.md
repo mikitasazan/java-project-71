@@ -12,7 +12,7 @@
 
 - Java 21, Gradle (application plugin)
 - picocli — разбор аргументов и опций командной строки
-- Jackson (jackson-databind) — парсинг JSON
+- Jackson (jackson-databind, jackson-dataformat-yaml) — парсинг JSON и YAML
 - JUnit 5 — тесты, JaCoCo — покрытие тестами (порог 80%)
 - Spotless + google-java-format — стиль кода
 - gradle-versions-plugin — проверка обновлений зависимостей
