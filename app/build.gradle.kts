@@ -23,6 +23,7 @@ dependencies {
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 
     implementation("info.picocli:picocli:4.7.7")
+    implementation("com.fasterxml.jackson.core:jackson-databind:2.22.2")
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
