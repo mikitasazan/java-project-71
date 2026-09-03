@@ -57,6 +57,12 @@ Property 'timeout' was updated. From 50 to 20
 Property 'verbose' was added with value: true
 ```
 
+Формат json (`-f json`, для передачи другим программам):
+
+```
+[{"key":"follow","type":"removed","oldValue":false,"newValue":null},{"key":"host","type":"unchanged","oldValue":"hexlet.io","newValue":"hexlet.io"},{"key":"proxy","type":"removed","oldValue":"123.234.53.22","newValue":null},{"key":"timeout","type":"changed","oldValue":50,"newValue":20},{"key":"verbose","type":"added","oldValue":null,"newValue":true}]
+```
+
 ---
 
 <details>
